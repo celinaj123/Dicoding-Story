@@ -1,0 +1,34 @@
+{
+  "name": "Dicoding Story App",
+  "short_name": "StoryApp",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6200ee",
+  "icons": [
+    {
+      "src": "/images/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/screenshot-desktop.png",
+      "sizes": "1816x809",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/screenshot-mobile.png",
+      "sizes": "493x840",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

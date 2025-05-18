@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="manifest" href="manifest.json" />
+
+    <title>App</title>
+  </head>
+  <body>
+    <header>
+      <a href="#main-content" class="skip-to-content">Skip to main content</a>
+      <div class="main-header container">
+        <a class="brand-name" href="#/">Dicoding Story</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/login">Login</a></li>
+            <li><a href="#/add-story">Buat Cerita</a></li>
+            <li><button id="logoutBtn">Logout</button></li>
+          </ul>
+          <div id="push-btn-container"></div>
+        </nav>
+
+        <button id="drawer-button" class="drawer-button">☰</button>
+      </div>
+    </header>
+    <div id="app">
+      <main id="main-content" tabindex="-1"></main>
+    </div>
+  </body>
+</html>
