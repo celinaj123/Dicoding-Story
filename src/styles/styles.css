@@ -170,6 +170,44 @@ header {
   color: #999;
 }
 
+.story-item .view-story-btn {
+  background-color: #54a1d7;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.story-item .view-story-btn:hover {
+  background-color: #54a1d7;
+}
+
+.story-item .delete-story-btn {
+  background-color: #493fdd;
+  color: #fff;
+  border: none;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.story-item .delete-story-btn:hover {
+  background-color: #493fdd;
+}
+
+.story-item .story-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
 main {
   max-width: 800px;
   margin: auto;

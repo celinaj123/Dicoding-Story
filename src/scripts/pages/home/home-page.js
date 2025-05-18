@@ -13,7 +13,6 @@ export default class HomePage {
       stories = await StoryAPI.getStories();
       await saveStories(stories);
     } catch (err) {
-    
       stories = await getAllStories();
       if (stories.length === 0) {
         this.mainContent.innerHTML = "<p>Tidak ada data story.</p>";
@@ -33,7 +32,10 @@ export default class HomePage {
               <h2>${story.name}</h2>
               <p>${story.description}</p>
               <small>${new Date(story.createdAt).toLocaleString()}</small>
+            <div class="story-actions">
+              <button class="view-story-btn" data-id="${story.id}">View</button>
               <button class="delete-story-btn" data-id="${story.id}">Hapus</button>
+            </div>
             </article>
           `
             )
@@ -42,6 +44,15 @@ export default class HomePage {
       </section>
     `;
 
+    // Event listener untuk tombol View
+    this.mainContent.querySelectorAll(".view-story-btn").forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        const id = btn.dataset.id;
+        window.location.hash = `/detail/${id}`;
+      });
+    });
+
+    // Event listener untuk tombol Hapus
     this.mainContent.querySelectorAll(".delete-story-btn").forEach((btn) => {
       btn.addEventListener("click", async (e) => {
         const id = btn.dataset.id;
